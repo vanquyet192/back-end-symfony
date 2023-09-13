@@ -1,0 +1,82 @@
+<?php //6de76a10c3137553b810ccf2f5a6a371
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT p0_.id AS id_0, p0_.title AS title_1, p0_.price AS price_2, p0_.images AS images_3, p0_.description AS description_4, p0_.quantity AS quantity_5, p0_.category_id AS category_id_6 FROM product p0_ WHERE p0_.title LIKE ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\Product',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'title_1' => 'title',
+                    'price_2' => 'price',
+                    'images_3' => 'images',
+                    'description_4' => 'description',
+                    'quantity_5' => 'quantity',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'category_id_6' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'category_id_6' => 'category_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'p',
+                    'title_1' => 'p',
+                    'price_2' => 'p',
+                    'images_3' => 'p',
+                    'description_4' => 'p',
+                    'quantity_5' => 'p',
+                    'category_id_6' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product',
+                    'title_1' => 'App\\Entity\\Product',
+                    'price_2' => 'App\\Entity\\Product',
+                    'images_3' => 'App\\Entity\\Product',
+                    'description_4' => 'App\\Entity\\Product',
+                    'quantity_5' => 'App\\Entity\\Product',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    [
+        [
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'sqlExecutor' => $o[1],
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'resultSetMapping' => $o[2],
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'parameterMappings' => [
+                'query' => [
+                    0,
+                ],
+            ],
+        ],
+    ]
+); }];

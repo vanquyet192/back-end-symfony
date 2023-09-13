@@ -1,0 +1,67 @@
+<?php //553873c44c9e81a07b719781f848b4d7
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT u0_.id AS id_0, u0_.email AS email_1, u0_.password AS password_2, u0_.address AS address_3, u0_.phone AS phone_4, u0_.fullname AS fullname_5 FROM user u0_ ORDER BY u0_.id ASC LIMIT 30',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\User',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'email_1' => 'email',
+                    'password_2' => 'password',
+                    'address_3' => 'address',
+                    'phone_4' => 'phone',
+                    'fullname_5' => 'fullname',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'o',
+                    'email_1' => 'o',
+                    'password_2' => 'o',
+                    'address_3' => 'o',
+                    'phone_4' => 'o',
+                    'fullname_5' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\User',
+                    'email_1' => 'App\\Entity\\User',
+                    'password_2' => 'App\\Entity\\User',
+                    'address_3' => 'App\\Entity\\User',
+                    'phone_4' => 'App\\Entity\\User',
+                    'fullname_5' => 'App\\Entity\\User',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    [
+        [
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'sqlExecutor' => $o[1],
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'resultSetMapping' => $o[2],
+            "\0".'Doctrine\\ORM\\Query\\ParserResult'."\0".'parameterMappings' => [],
+        ],
+    ]
+); }];
